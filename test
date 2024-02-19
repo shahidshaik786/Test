@@ -1,0 +1,25 @@
+Authentication Header: Verify that the API requires an authentication header for all requests. Test cases could include:
+
+Sending a request without an authentication header and ensuring it returns a 401 Unauthorized response.
+Sending a request with an invalid authentication header and ensuring it returns a 401 Unauthorized response.
+Sending a request with a valid authentication header and ensuring it returns a 200 OK response.
+Content-Type Header: Verify that the API enforces the correct Content-Type header for requests that require a specific data format. Test cases could include:
+
+Sending a request without a Content-Type header and ensuring it returns a 400 Bad Request response.
+Sending a request with an unsupported Content-Type header and ensuring it returns a 415 Unsupported Media Type response.
+Sending a request with the correct Content-Type header and ensuring it returns a 200 OK response.
+Authorization Header: If the API uses an authorization header for access control, verify that it is implemented correctly. Test cases could include:
+
+Sending a request without an authorization header and ensuring it returns a 401 Unauthorized response.
+Sending a request with an invalid authorization header and ensuring it returns a 401 Unauthorized response.
+Sending a request with a valid authorization header and ensuring it returns a 200 OK response.
+CORS (Cross-Origin Resource Sharing): If the API allows cross-origin requests, verify that the CORS headers are correctly set. Test cases could include:
+
+Sending a cross-origin request without the appropriate CORS headers and ensuring it returns a 403 Forbidden response.
+Sending a cross-origin request with the appropriate CORS headers and ensuring it returns a 200 OK response.
+Cache-Control Header: Verify that the API sets the appropriate Cache-Control header to control caching behavior. Test cases could include:
+
+Sending a request and ensuring that the Cache-Control header is present and set to the desired value (e.g., no-cache, private, public, etc.).
+X-Frame-Options Header: If the API is used in a web application, verify that it sets the X-Frame-Options header to prevent clickjacking attacks. Test cases could include:
+
+Sending a request and ensuring that the X-Frame-Options header is present and set to the desired value (e.g., deny, sameorigin, etc.).
